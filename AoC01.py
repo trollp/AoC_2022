@@ -17,11 +17,9 @@ for line in Lines:
     cal = str(line.strip())
     if len(cal) == 0:
         cal = 0
-   # print(int(cal))
     cal = int(cal)
     summary = summary + cal
     if cal == 0:
-        #print(sum)
         list.append(summary)
         summary = 0
 list.sort()
