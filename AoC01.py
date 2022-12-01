@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Dec  1 10:28:24 2022 
-
 @author: ptroll 
 """
 
@@ -15,11 +14,10 @@ list = []
 # Strips the newline character
 for line in Lines:
     cal = str(line.strip())
-    if len(cal) == 0:
-        cal = 0
+    if len(cal) == 0: cal = 0
     cal = int(cal)
     total = total + cal
-    if cal == 0:
+    if cal == 0: 
         list.append(total)
         total = 0
 list.sort()
